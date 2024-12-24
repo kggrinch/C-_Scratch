@@ -1,0 +1,4 @@
+Both bubble sort and insertion sort have a worst case runtime of O(n^2), but they have different best case runtimes.
+Insertion sort is generally faster because if the given list is partially sorted the insertion sort could sort the list faster than O(n^2) because the insertion sort
+ends once all elements are sorted. Bubble sort will sort the list in O(n^2) regardless if the list is partially sorted because the bubble sort ends only after the sort
+has finished all its iterations. In general they are similar but in the case of a partially sorted list the insertion sort will sort faster than the bubble sort.

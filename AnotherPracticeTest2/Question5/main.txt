@@ -1,0 +1,9 @@
+A destructor might need to be implemented when you need to delete allocated memory from heap, since the default constructor only deletes memory from stack.
+
+An instance where you might want to implement the assignment operator but not the copy operator is when the assignment operator requires allocation of
+new memory from the heap so a normal default assignment operator is not enough, but a copy operator is not needed. For example if you are working with already
+initialized objects you would not need a copy constructor since you are working with created objects, but you would need an assignment operator if you want to
+assign already created objects into other objects.
+
+An instance where you might need to implement the assignment operator but not the copy is when the assignment operator needs to do more work with the already
+existing objects, like deleting memory or garbage collection, where a copy operator would not need to do any work since the object is newly created.

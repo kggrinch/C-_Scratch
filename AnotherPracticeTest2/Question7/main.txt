@@ -1,0 +1,8 @@
+Line 1: Legal
+Line 2: Legal but useless since foo object will be deconstructed once out of scope
+Line 3: Not Legal need to use -> or dereference food_truck
+Line 4: Legal
+Line 5: Not legal cant change a const
+Line 6: Legal
+Line 7: Not legal cannot give the address to a non-const pointer since function is declared const
+Line 8: Not legal cannot modify num_ratings since function is declared const.
